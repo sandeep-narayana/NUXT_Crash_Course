@@ -10,4 +10,8 @@ body {
   .btn {
     @apply bg-[#12b448] text-white px-3 py-2 rounded-md text-sm; /* Correct the typo and add a semicolon */
   }
+  .card{
+    @apply p-3 rounded-mdbg-white shadow-md h-full;
+  }
+
 }

@@ -2,21 +2,18 @@
 
 <template>
   <div>
-    <img :src=product.image alt="">
-   <p>{{product.title}}</p>
-   <p>{{product.price}}</p>
-   <p>{{product.description}}</p>
-   <p>{{product.category}}</p>
-   
+    <ProductDetails :product="product" />
   </div>
 </template>
 
 <script setup>
+import ProductDetails from "~/component/ProductDetails.vue";
+
 const { id } = useRoute().params;
 const url = `https://fakestoreapi.com/products/${id}`;
 
 // fetch the product
-const { data: product } = await useFetch(url,{key:id});
+const { data: product } = await useFetch(url, { key: id });
 definePageMeta({
   layout: "product",
 });
