@@ -18,8 +18,17 @@ definePageMeta({
 });
 
 // feth the data
-
 const { data: products } = await useFetch("https://fakestoreapi.com/products");
+
+//overide the defuult usehead 
+useHead({
+  title: 'overid useheaD',
+  meta:[
+    {name:'DESCRIPTION' , content: 'NUXT 3  MERCH'}
+  ]
+})
+// ANOTHER WAY IS TO USE HEADTAG AND WRITE TITLE AND META IN IT
+
 </script>
 
 <style scoped></style>
