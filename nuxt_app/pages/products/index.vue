@@ -2,10 +2,14 @@
 
 <template>
     <div>
-        <p>Product</p>
+        <p>Product Homepage</p>
     </div>
 </template>
 
-<script setup></script>
+<script setup>
+definePageMeta({
+    layout:"product"
+})
+</script>
 
 <style scoped></style>
