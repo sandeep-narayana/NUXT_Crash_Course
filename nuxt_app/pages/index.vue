@@ -1,4 +1,14 @@
 <template>
+  <header>
+    <NuxtLink to="/">Nuxt logo</NuxtLink>
+    <nav>
+      <ul>
+        <li><NuxtLink to="/">Home</NuxtLink></li>
+        <li><NuxtLink to="/about">About</NuxtLink></li>
+        <li><NuxtLink to="/products">Products</NuxtLink></li>
+      </ul>
+    </nav>
+  </header>
   <h2>Home Page</h2>
   <p>
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum tempora,
@@ -7,8 +17,6 @@
     unde asperiores.
   </p>
 </template>
-
-<script></script>
 
 <style scoped>
 h2 {
